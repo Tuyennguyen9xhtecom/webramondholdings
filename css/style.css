@@ -12,6 +12,9 @@ body{
 .mg-center{
     margin: auto;
 }
+.mg-bt-0{
+    margin-bottom: 0px!important;
+}
 button:focus,.view-more-post:focus, .pagination a:focus, .pagination button:focus, a:focus, a:hover{
     outline: none!important;
     text-decoration: none !important;
@@ -1984,7 +1987,8 @@ footer .contact-footer{
     }
     .button-menu-mobi .navbar-toggler-icon{
         color: white;
-        background: black;
+        /* background: black; */
+        background: #c89b46;
         border-radius: 3px; 
     }
     .button-menu-mobi svg{
@@ -2019,6 +2023,21 @@ footer .contact-footer{
         padding-top: 8px;
         padding-bottom: 8px;
     }
+    .menu-nav .nav-item{
+        border-bottom: 1px solid #ccc;
+    }
+    .menu-nav .nav-item:first-child{
+        border-top: 1px solid #ccc;
+    }
+    .right-menu .chose-language{ 
+        margin-top: 0px;
+    }
+    .right-menu .chose-language li{
+        padding: 8px 0px;
+    }
+    .menu-nav .nav-item:last-child{
+        border-bottom: none
+    }
     .menu-nav .nav-item a{
         padding: 8px 20px !important;   
     }
@@ -2047,9 +2066,13 @@ footer .contact-footer{
         width: 150%;
         height: 150%;
     }
-    .content{
-        top: 16px;
-        left: 20px;
+    .banner-page{
+        aspect-ratio: 16 / 9;
+        height: auto;
+    }
+    .content, .banner-page .content{
+        top: 16px!important;
+        left: 20px!important;
     }
     .content h3{
         font-size: 16px;
@@ -2071,9 +2094,15 @@ footer .contact-footer{
         width: 25px;
         height: 25px;
     }
-    .about-home h2 span {
+    .about-home h2 span, .sec-core-values h3, .sec-list-project h2
+    /* ,.sec-profile h2 */
+    {
         font-size: 32px;
         line-height: 42px;
+        letter-spacing: -1px;
+    }
+    .sec-core-values h3 img{
+        height: 32px;
     }
     .desc-about-home{
         font-size: 18px;
@@ -2093,8 +2122,9 @@ footer .contact-footer{
         letter-spacing: -1px;
     }
     .activy-home h2 img{
-        margin-right: 8px;
-        width: 32px;
+        margin-right: 8px!important;
+        height: 32px;
+        width: auto;
     }
     .desc-activy-home{
         padding: 16px;
@@ -2132,15 +2162,18 @@ footer .contact-footer{
     .menu-footer .left-menu, .menu-footer .right-menu{
         display: none;
     }
+    .logo-footer img{
+        width: 200px;
+    }
     .info-footer {
         padding-top: 35px;
         padding-bottom: 35px;
     }
-    footer .info-address h2 {
+    footer .info-address h2, .item-core-values p, .sec-core-values .right-content {
         font-size: 18px;
         line-height: 28px;
     }
-    footer .info-address p {
+    footer .info-address p, .item-difference-point p {
         font-size: 16px;
         line-height: 26px;
     }
@@ -2170,5 +2203,145 @@ footer .contact-footer{
     }
     footer .contact-footer {
         padding-bottom: 40px;
+    }
+    .sec-introduce .item .col-md-6:first-child{
+        order: 2;
+    }
+    .sec-introduce .item .col-md-6:nth-child(2){
+        order: 1;
+        margin-bottom: 30px;
+    }
+    .sec-introduce .item .row{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .sec-introduce .item h2{
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: -1px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .sec-introduce .item h2 img{
+        height: 32px;
+        margin-right: 10px;
+    }
+    .sec-introduce .item p{
+        font-size: 18px;
+        line-height: 24px;
+        text-align: justify;
+    }
+    .sec-core-values h3 img {
+        margin-bottom: 2px;
+    }
+    .sec-core-values{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .sec-core-values .row{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .sec-core-values .row:first-child{
+        padding-top: 0px!important;
+    }
+    .item-core-values {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-bottom: 40px;
+    }
+    .item-core-values:last-child{
+        margin-bottom: 0px!important;
+    }
+    .item-core-values img{
+        width: 200px;
+    }
+    .item-core-values h3 {
+        margin-top: -25px;
+    }
+    .sec-core-values .dropdown-divider{
+        display: none;
+    }
+    .sec-core-values .right-content ul li {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .item-difference-point h3 {
+        font-size: 18px !important;
+        line-height: 28px !important;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    .item-difference-point{
+        padding: 40px 21px 24px 21px;
+    }
+    .item-difference-point button{
+        width: 68px;
+        height: 58px;
+        top: -29px;
+        margin-left: -34px;
+        font-size: 24px;
+        line-height: 34px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: 4px solid rgba(0, 0, 0, 1);
+    }
+    .row-difference-point .item-col{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-bottom: 60px;
+    }
+    .row-difference-point .item-col:last-child, .row-difference-point .item-col:last-child:last-of-type{
+        margin-bottom: 0px!important;
+    }
+    .activy-home.page-about {
+        padding-bottom: 60px;
+    }
+    .sec-profile h2 {
+        font-size: 28px;
+        line-height: 38px;
+        margin-left: -15px;
+        margin-right: -15px;
+        text-align: center;
+        letter-spacing: -1px;
+    }
+    .row-download-profile .btn-download{
+        width: 165px;
+    }   
+    .row-download-profile button {
+        height: 36px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        width: 165px;
+    }
+    .row-download-profile button svg{
+        width: 16px;
+        height: 16px;
+        margin-bottom: 4px;
+        margin-left: 2px;
+    }
+    .sec-profile {
+        padding-top: 50px;
+        padding-bottom: 86px;
+    }
+    .row-download-profile {
+        margin-top: 0px;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .left-btn-download, .right-btn-download {
+        width: calc((100% - 165px) / 2);
+    }
+    .row-download-profile a {
+        bottom: -18px;
+    }
+    .left-btn-download img, .right-btn-download img{
+        height: 40px;
+        width: auto;
     }
 }
