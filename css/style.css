@@ -1498,6 +1498,7 @@ footer .contact-footer{
     -webkit-line-clamp: 4;
     text-overflow: ellipsis;
     letter-spacing: -0.3px;
+    text-align: justify;
 }
 .show-list-news .new-item .date-created{
     color: rgba(0, 0, 0, 1);
@@ -2020,8 +2021,10 @@ footer .contact-footer{
         position: relative;
     }
     .menu-nav .nav-item{
-        padding-top: 8px;
-        padding-bottom: 8px;
+        /* padding-top: 8px;
+        padding-bottom: 8px; */
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     .menu-nav .nav-item{
         border-bottom: 1px solid #ccc;
@@ -2044,11 +2047,13 @@ footer .contact-footer{
     .menu-nav .nav-item.active, .menu-nav .nav-item:hover{
         height: auto;
         border-top: none;
-        padding-top: 8px;
+        /* padding-top: 8px; */
+        padding-top: 0px;
         padding-right: 0px !important;
     }
     .nav-item.dropdown .dropdown-menu a.dropdown-item{
         text-align: left;
+        font-size: 14px;
     }
     .nav-item.dropdown .dropdown-menu a.dropdown-item br{
         content: '  ';
@@ -2247,6 +2252,11 @@ footer .contact-footer{
     .sec-core-values .row:first-child{
         padding-top: 0px!important;
     }
+    .sec-core-values .row .col-md-6{
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
     .item-core-values {
         padding-left: 15px !important;
         padding-right: 15px !important;
@@ -2329,6 +2339,7 @@ footer .contact-footer{
         padding-top: 50px;
         padding-bottom: 86px;
     }
+    
     .row-download-profile {
         margin-top: 0px;
         margin-left: 0px !important;
@@ -2343,5 +2354,342 @@ footer .contact-footer{
     .left-btn-download img, .right-btn-download img{
         height: 40px;
         width: auto;
+    }
+    .list-project {
+        padding-top: 25px;
+    }
+    .header-list-project .title-page{
+        width: 78%;
+    }
+    .title-page h2 {
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -1px;
+    }
+    .header-list-project .col-xs-3{
+        width: 22%;
+    }
+    .body-filter{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        gap: 5px;
+    }
+    .project-item {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        width: 100%;
+        /* text-align: center; */
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    .project-item .row, .project-item .row .img-project,.project-item .row .text-project{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .project-item .row .text-project{
+        margin-top: 30px;
+    }
+    .title-project {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .sub-title-project {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .info-project, .sub-info-project {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .info-project {
+        margin-top: 0px;
+    }
+    .sub-info-project .number-info {
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .btn-dark-load-more {
+        padding: 10px 20px;
+    }
+    .project-item .row:nth-of-type(odd) .text-project{
+        order: 2;
+    }
+    .project-item .row:nth-of-type(odd) .img-project{
+        order: 1;
+    }
+    .project-item .title-project-yellow {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 30px;
+    }
+    .pagination.mg-top-40{
+        margin-top: 0px!important;
+    }
+    .page-service .header-list-project .title-page, .page-recruitment .header-list-project .title-page {
+        width: 100%;
+    }
+    .sub-title-page-service {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    .page-service .header-list-project{
+        border-bottom: none;
+    }
+    .page-service .title-page h2 br{
+        display: none;
+    }
+    .page-list-news .title-page h2 img, .page-list-video .title-page h2 img,
+     .page-list-gallery .header-list-project h2 img, .page-recruitment .header-list-project h2 img{
+        height: 28px;
+        margin-right: 8px;
+    }
+    .show-list-news .new-item h3 {
+        padding-top: 16px;
+        margin-bottom: 8px;
+        font-size: 24px;
+        height: auto;
+    }
+    .show-list-news .new-item .desc-news {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 24px;
+        
+    }
+    .show-list-news .new-item .date-created {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .show-list-news .new-item {
+        margin-bottom: 30px!important;
+    }
+    .show-list-news .new-item:last-child {
+        margin-bottom: 0px;
+    }
+    .page-list-news{
+        padding-bottom: 50px;
+    }
+    .event-item .col-item {
+        padding: 15px;
+    }
+    .event-item .date-created {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+    .event-item h3 {
+        font-size: 24px;
+        line-height: 34px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .event-item .desc-events {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+    .event-item button {
+        font-size: 16px;
+    }
+    .event-item .col-item {
+        margin-bottom: 30px;
+    }
+    .page-list-events .pagination {
+        margin-top: 0px;
+    }
+    .show-list-img .slider-single .slick-prev {
+        margin-left: 25px;
+    }
+    .show-list-img .slider-single .slick-next {
+        margin-right: 25px;
+    }
+    .page-list-gallery{
+        padding-bottom: 25px;
+    }
+    .show-list-img .slider-nav {
+        margin-top: 16px;
+    }
+    .item-video button {
+        left: 80%;
+        top: 40%;
+    }
+    .item-video button.play-video img{
+        width: 40px;
+    }
+    .text-in-video{
+        width: 60%;
+        left: 10%;
+        top: 40%;
+    }
+    .text-in-video h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .text-in-video h4 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+    .text-in-video p{
+        font-size: 13px;
+        line-height: 16px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        text-align: justify;
+    }
+    .content-news {
+        margin-top: 50px;
+    }
+    .content-news h1 {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+    .info-date-and-share .col-xs-6{
+        width: 50%;
+    }
+    .info-date-and-share {
+        padding-bottom: 15px;
+        margin-bottom: 16px;
+    }
+    .main-content-new p {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .main-content-new em {
+        margin-bottom: 16px;
+        margin-top: 8px;
+    }
+    .content-news .btn-dark-load-more {
+        margin-bottom: 40px;
+    }
+    .another-news .title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .show-list-news {
+        padding-top: 16px;
+        padding-bottom: 20px;
+    }
+    .another-news .pagination {
+        margin-bottom: 50px;
+    }
+    .page-recruitment .header-list-project{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .page-recruitment {
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+    }
+    .page-recruitment .header-list-project .title-page {
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
+    .sec-list-recruitment table thead tr th {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .sec-list-recruitment table thead tr th, .sec-list-recruitment table tr td {
+        padding: 8px;
+    }
+    .sec-list-recruitment table tr td {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .sec-list-recruitment table tr td p {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .sec-list-recruitment table tr td p svg{
+        height: 13px;
+    }
+    .sec-list-recruitment .load-more {
+        margin-bottom: 50px;
+    }
+    .form-request-recruitment .title-page h2 {
+        font-size: 27px;
+    }
+    .form-request-recruitment form input, .form-request-recruitment form select {
+        height: 60px;
+        padding: 8px 16px;
+        font-size: 16px;
+        line-height: 24px;
+        
+    }
+    .form-request-recruitment .input-file input {
+        background: rgb(244 244 243) !important;
+        font-size: 13px;
+        line-height: 32.59px;
+        padding-left: 39px;
+    }
+    .input-file .btn-file-1 {
+        width: 110px;
+        font-size: 16px;
+        line-height: 24.59px;
+    
+    }
+    .input-file .btn-file-2{
+        display: none;
+    }
+    .form-request-recruitment .btn-dark-load-more {
+        margin-bottom: 40px;
+    }
+    .sologan h3 {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 35px;
+    }
+    .sologan ul {
+        display: block;
+    }
+    .sologan ul li {
+        padding-bottom: 15px;
+    }
+    .sologan ul li h4 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .sologan .color-yellow {
+        font-size: 24px !important;
+        line-height: 34px;
+    }
+    .content-contact .container{
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .left-contact img{
+        width: 70px;
+    }
+    .content-contact .left-contact h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .left-contact .info-contact {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .content-contact .right-contact {
+        padding-left: 0px;
+        padding-top: 25px;
+    }
+    .content-contact .right-contact label {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .content-contact .right-contact input, .content-contact .right-contact input:focus {
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        padding-top: 10px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .right-contact form {
+        padding-bottom: 65px;
     }
 }
