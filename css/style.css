@@ -1851,7 +1851,7 @@ footer .contact-footer{
     color: rgba(255, 255, 255, 1);
     font-weight: 400;
 }
-.content-contact .right-contact input, .content-contact .right-contact input:focus{
+.content-contact .right-contact input, .content-contact .right-contact input:focus, .content-contact .right-contact input:focus-visible{
     background: transparent;
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -2126,7 +2126,7 @@ footer .contact-footer{
         padding-bottom: 30px;
         letter-spacing: -1px;
     }
-    .activy-home h2 img{
+    .activy-home h2 img, .page-list-events .title-page h2 img{
         margin-right: 8px!important;
         height: 32px;
         width: auto;
@@ -2682,7 +2682,7 @@ footer .contact-footer{
         font-size: 18px;
         line-height: 28px;
     }
-    .content-contact .right-contact input, .content-contact .right-contact input:focus {
+    .content-contact .right-contact input, .content-contact .right-contact input:focus, .content-contact .right-contact input:focus-visible {
         margin-bottom: 25px;
         padding-bottom: 15px;
         padding-top: 10px;
@@ -2692,4 +2692,399 @@ footer .contact-footer{
     .right-contact form {
         padding-bottom: 65px;
     }
+    .project-home {
+        margin-top: -359px;
+    }
+    .item-activity-home{
+        margin-bottom: 25px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .project-home {
+        margin-top: -339px;
+    }
+    .page-recruitment .header-list-project {
+        margin-left: 0px; 
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .menu-nav .nav-item a {
+        font-size: 14px;
+    }
+    .logo-header img, .logo-footer img{
+        width: 200px;
+    }
+    .show-list-news {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .page-list-news {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .show-list-news .new-item {
+        margin-bottom: 30px;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+    .show-list-news .new-item h3 {
+        padding-top: 8px;
+        font-size: 18px;
+        line-height: 24px;
+        height: auto;
+        margin-bottom: 8px;
+    }
+    .show-list-news .new-item .desc-news {
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .show-list-news .new-item .date-created {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .info-footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    footer .info-address h2 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    footer .info-social {
+        margin-top: 60px;
+    }
+    footer .info-address p, footer .info-contact {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    footer .list-social, footer .info-contact {
+        padding-left: 40px;
+    }
+    .sec-introduce .item .content-text {
+        padding-left: 15px;
+    }
+    .sec-introduce .item h2 img {
+        margin-right: 8px;
+    }
+    .partner-home h2 img, .activy-home h2 img,.about-home h2 img, .sec-introduce .item h2 img,
+    .sec-core-values h3 img, .sec-list-project h2 img, .sec-profile h2 img, .page-list-news .header-list-project h2 img,
+    .page-list-events .title-page h2 img, .page-list-gallery .header-list-project h2 img, 
+    .page-list-video .header-list-project h2 img, .page-recruitment .header-list-project h2 img{
+        height: 32px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+    .sec-introduce .item h2,  .activy-home h2
+    , .title-project{
+        line-height: 38px;
+        font-size: 28px;
+    }
+    .activy-home h2, .about-home h2 span, .project-home h2, .partner-home h2 span, .sec-introduce .item h2, 
+    .sec-core-values h3, .sec-list-project h2, .sec-profile h2, .title-page h2, .project-item .title-project-yellow,
+    .sologan h3{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .sub-title-project, .info-project, .sub-info-project {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .sec-introduce .item h2 {
+        
+        margin-bottom: 16px;
+    }
+    .sec-introduce .item p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .item-core-values img{
+        width: 100%;
+    }
+    .item-core-values {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .item-core-values p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .sec-core-values .dropdown-divider{
+        top: 100px;
+    }
+    .sec-core-values {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .sec-core-values .row {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .item-core-values h3{
+        margin-top: -25px;
+    }
+    .sec-core-values .right-content {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .item-difference-point{
+        padding: 45px 15px 15px 15px;
+        border-radius: 5px;
+    }
+    .item-difference-point button {
+        top: -29px;
+        margin-left: -34px;
+        font-size: 24px;
+        line-height: 32px;
+        width: 68px;
+        height: 58px;
+        border: 4px solid rgba(0, 0, 0, 1);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .item-difference-point h3{
+        margin-bottom: 16px;
+    }
+    .item-difference-point h3 {
+        font-size: 18px !important;
+        line-height: 24px !important;
+    }
+    .item-difference-point p {
+        line-height: 24px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    .activy-home.page-about {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    .activy-home h2{
+        padding-bottom: 30px;
+    }
+    .desc-activy-home h3, .desc-project-home h3 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+    .desc-activy-home ul, .desc-project-home ul {
+        margin-left: 16px;
+    }
+    .desc-activy-home ul li, .desc-project-home ul li {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+    .row-download-profile button {
+        font-size: 18px;
+        line-height: 28px;
+        height: 58px;
+        letter-spacing: 4px;
+    }
+    .row-download-profile a{
+        bottom: -30px;
+    }
+    .content h1 {
+        font-size: 58px;
+        line-height: 78px;
+    }
+    .about-home {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .desc-about-home{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .content-about-home .desc-about-home p{
+        margin-bottom: 0px;
+    }
+    .activy-home {
+        padding-top: 60px;
+        padding-bottom: 400px;
+    }
+    .desc-activy-home{
+        padding: 16px;
+    }
+    .title-project-home.title-project-no-hover {
+        top: 33px;
+        left: 33px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .partner-home {
+        margin-top: 55px;
+    }
+    .body-filter {
+        gap: 25px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .list-project {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .project-item {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+    .info-project {
+        margin-top: 10px;
+    }
+    .sub-info-project .number-info {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .btn-dark-load-more {
+        padding: 10px 25px;
+    }
+    .project-item .title-project-yellow{
+        margin-bottom: 30px;
+    }
+    .pagination.mg-top-40{
+        margin-top: 15px;
+    }
+    .event-item .col-item {
+        margin-bottom: 40px;
+        padding: 15px;
+    }
+    .event-item .date-created {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .event-item h3 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .event-item .desc-events {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+    .event-item button {
+        padding: 10px 14px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .page-list-events .pagination {
+        margin-top: -18px;
+    }
+    .show-list-img .slider-single .slick-prev {
+        margin-left: 37px;
+    }
+    .show-list-img .slider-single .slick-next {
+        margin-right: 37px;
+    }
+    .item-video button {
+        left: 80%;
+    }
+    .play-video img{
+        width:90px;
+    }
+    .page-recruitment {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+    .sec-list-recruitment table thead tr th {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 10px;
+    }
+    .sec-list-recruitment table tr td {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .sec-list-recruitment table tr td p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .sec-list-recruitment table tr td p svg{
+        margin-bottom: 3px;
+    }
+    .sec-list-recruitment .load-more {
+        margin-bottom: 53px;
+    }
+    .form-request-recruitment form{
+        max-width: 600px!important;
+    }
+    .form-request-recruitment .btn-dark-load-more {
+        margin-bottom: 20px;
+    }
+    .sologan h3{
+        margin-bottom: 30px;
+    }
+    .sologan ul{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .sologan ul li {
+        padding-left: 32px;
+    }
+    .sologan ul li::before {
+        top: calc(0% + 8px);
+        display: inline-block;
+        width: 24px;
+        height: auto;
+        transform: scale(0.5);
+        transform-origin: left top;
+    }
+    .sologan ul li h4 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .sologan .color-yellow {
+        color: #C89B46;
+        font-size: 20px !important;
+        line-height: 32px;
+    }
+    .content-contact .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .content-contact .right-contact {
+        max-width: calc(100% - 340px);
+    }
+    .left-contact img{
+        width: 80px;
+    }
+    .content-contact .left-contact h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .left-contact .info-contact {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .content-contact .right-contact label {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .content-contact .right-contact input, .content-contact .right-contact input:focus,.content-contact .right-contact input:focus-visible {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 25px;
+        font-size: 18px;
+        line-height: 24px;
+        padding-bottom: 24px;
+    }
+    .right-contact form {
+        padding-bottom: 98px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+    
 }
