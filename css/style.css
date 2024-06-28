@@ -27,7 +27,7 @@ button:focus,.view-more-post:focus, .pagination a:focus, .pagination button:focu
     color: rgba(36, 32, 32, 1);
     margin-bottom: 0px;
 }
-.btn-border-yellow{
+.btn-border-yellow, .btn-border-yellow:focus{
     color: #fff;
     font-size: 20px;
     line-height: 26px;
@@ -331,6 +331,7 @@ footer .info-address p{
 }
 footer .info-social a{
     color:#fff;
+    text-decoration: none;
 }
 footer .list-social{
     list-style: none;
@@ -464,15 +465,15 @@ footer .contact-footer{
     margin-left: -10px;
  }
 
- #about-home-modal{
+ #about-home-modal, #success-mail-modal{
     padding-right: 0px!important;
     background: rgba(0, 0, 0, 0.8);
  }
-#about-home-modal .modal-content{
+#about-home-modal .modal-content, #success-mail-modal .modal-content{
     background: transparent;
     color: white;
 }
-#about-home-modal .modal-header{
+#about-home-modal .modal-header, #success-mail-modal .modal-header{
     border-bottom: 0px;
 }
 #about-home-modal .modal-dialog{
@@ -481,21 +482,27 @@ footer .contact-footer{
     max-width: 928px;
     
 }
-#about-home-modal .modal-content{
+#success-mail-modal .modal-dialog {
+    width: 64.4%;
+    margin: auto;
+    margin-top: 30vh;
+    max-width: 628px;
+}
+#about-home-modal .modal-content, #success-mail-modal .modal-content{
     border: none !important;
     text-align: center;
     padding-top: 10%;
     padding-bottom: 5%;
 }
-#about-home-modal .modal-content h2{
+#about-home-modal .modal-content h2, #success-mail-modal .modal-content .modal-body{
     text-align: center;
 }
-#about-home-modal .modal-content h2 img{
+#about-home-modal .modal-content h2 img, #success-mail-modal .modal-content .modal-body img{
     display: block;
     margin: auto;
     margin-bottom: 10px;
 }
-#about-home-modal .modal-content h2 span{
+#about-home-modal .modal-content h2 span, #success-mail-modal .modal-content .modal-body span{
     font-size: 48px;
     line-height: 58px;
     color: rgba(200, 155, 70, 1);
@@ -1826,6 +1833,10 @@ footer .contact-footer{
     line-height: 32px;
     font-weight: 400;
 }
+.left-contact .info-contact a{
+    color: #fff;
+    text-decoration: none!important;
+}
 .left-contact .list-social{
     list-style: none;
     display: flex;
@@ -2064,12 +2075,22 @@ footer .contact-footer{
         padding-top: 0px;
         padding-right: 0px !important;
     }
+    .menu-nav .nav-item.dropdown .dropdown-menu{
+        width: 100%;
+    }
+    .nav-item.dropdown:hover .dropdown-menu,
+    .menu-nav .nav-item.dropdown .dropdown-menu{
+        position: relative!important;
+    }
     .nav-item.dropdown .dropdown-menu a.dropdown-item{
         text-align: left;
         font-size: 14px;
     }
     .nav-item.dropdown .dropdown-menu a.dropdown-item br{
         content: '  ';
+    }
+    .right-menu .nav-item:last-child{
+        display: none;
     }
     .chose-language{
         width: 100%;
@@ -2112,6 +2133,40 @@ footer .contact-footer{
         width: 25px;
         height: 25px;
     }
+    #about-home-modal .modal-content h2 span{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    #success-mail-modal .modal-content .modal-body span {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #about-home-modal .modal-content h2 img, #success-mail-modal .modal-content .modal-body img {
+        height: 32px;
+    }
+    #about-home-modal .desc-about-home p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #about-home-modal .modal-dialog{
+        width: 80%;
+    }
+    
+    #success-mail-modal .modal-dialog {
+        width: 94%;
+        max-width: 297px;
+    }
+    #about-home-modal .modal-body , #success-mail-modal .modal-body{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #about-home-modal .desc-about-home {
+        margin-top: 16px;
+        text-align: justify;
+    }
+    #about-home-modal .desc-about-home p {
+        margin-bottom: 24px;
+    }
     .about-home h2 span, .sec-core-values h3, .sec-list-project h2
     /* ,.sec-profile h2 */
     {
@@ -2125,7 +2180,7 @@ footer .contact-footer{
     .desc-about-home{
         font-size: 18px;
         line-height: 24px;
-        text-align: justify;
+        /* text-align: justify; */
         margin-top: 16px; 
         margin-bottom: 20px;
     }
@@ -2202,6 +2257,7 @@ footer .contact-footer{
         font-size: 16px;
         line-height: 26px;
         margin-bottom: 0px;
+        text-decoration:none;
     }
     .btn-border-yellow {
         font-size: 18px;
@@ -2351,6 +2407,7 @@ footer .contact-footer{
     .sec-profile {
         padding-top: 50px;
         padding-bottom: 86px;
+        background-color: #fff;
     }
     
     .row-download-profile {
@@ -2403,6 +2460,8 @@ footer .contact-footer{
     }
     .project-item .row .text-project{
         margin-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .title-project {
         font-size: 32px;
@@ -2593,8 +2652,10 @@ footer .contact-footer{
         margin-bottom: 50px;
     }
     .page-recruitment .header-list-project{
-        margin-left: 15px;
-        margin-right: 15px;
+        /* margin-left: 15px; */
+        /* margin-right: 15px; */
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .page-recruitment {
         padding-top: 25px !important;
@@ -2689,18 +2750,18 @@ footer .contact-footer{
     }
     .content-contact .right-contact {
         padding-left: 0px;
-        padding-top: 25px;
+        /* padding-top: 25px; */
     }
     .content-contact .right-contact label {
         font-size: 18px;
         line-height: 28px;
     }
     .content-contact .right-contact input, .content-contact .right-contact input:focus, .content-contact .right-contact input:focus-visible {
-        margin-bottom: 25px;
+        margin-bottom: 35px;
         padding-bottom: 15px;
         padding-top: 10px;
         font-size: 18px;
-        line-height: 28px;
+        line-height: 24px;
     }
     .right-contact form {
         padding-bottom: 65px;
@@ -2711,6 +2772,17 @@ footer .contact-footer{
     .item-activity-home{
         margin-bottom: 25px;
         overflow: hidden;
+    }
+    .content-contact .left-contact {
+        order: 2;
+        margin-top: 40px;
+    }
+    .content-contact .right-contact {
+        order: 1;
+    }
+    .content-contact .right-contact input, .content-contact .right-contact input:focus, .content-contact .right-contact input:focus-visible {
+        /* border: 1px solid rgba(255, 255, 255, 0.5) ; */
+        border-radius: 0px!important;
     }
 }
 
@@ -3111,7 +3183,9 @@ footer .contact-footer{
     .menu-nav{
         letter-spacing: -0.7px;
     }
-
+    #success-mail-modal .modal-content .modal-body span {
+        font-size: 32px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 800px) {

@@ -144,7 +144,7 @@
                     Số 24 Quang Trung, Phường Trần Hưng Đạo, Quận Hoàn Kiếm, Thành phố Hà Nội
                 </div>
                 <div class="col-xs-12 info-contact">
-                    Email: support@ramondholdings.com.vn
+                    Email: <a href="mailto:support@ramondholdings.com.vn">support@ramondholdings.com.vn</a>
                 </div>
                 <div class="col-xs-12 info-contact">
                     Hotline: +84 24 3201 6666
@@ -176,12 +176,30 @@
                     <input type="text"  name="telephone-contact" placeholder="">
                     <label for="Nội dung liên hệ">Nội dung liên hệ</label>
                     <input type="text"  name="mess-contact" placeholder="">
-                    <button type="submit" class="btn-border-yellow">Gửi thông tin</button>
+                    <button type="button" class="btn-border-yellow" data-toggle="modal" data-target="#success-mail-modal">Gửi thông tin</button>
                 </form>
             </div>
         </div>
 
        
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="success-mail-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- <div class="modal-header">
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div> -->
+            <div class="modal-body">
+                <img src="../img/icon-mail.png" alt="Gửi thông tin thành công!" title="Gửi thông tin thành công!"><span>Gửi thông tin thành công!</span>
+            </div>
+        
+        </div>
+        </div>
     </div>
 
     <!-- Link to your custom JavaScript file -->

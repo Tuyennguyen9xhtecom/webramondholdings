@@ -219,8 +219,9 @@ function pauseVideo(){
     });
 }
 $(document).ready(function() {
+    var $video = $('#myvideo');
     $(window).on('scroll', function() {
-        var $video = $('#myvideo');
+        
         if ($video.length) {
             var videoTop = $video.offset().top;
             var videoHeight = $video.height();
@@ -230,6 +231,7 @@ $(document).ready(function() {
             if ((windowTop + windowHeight) >= videoTop && windowTop <= (videoTop + videoHeight)) {
                 if ($video.get(0).paused) {
                     $video.get(0).play();
+                    exitFullScreen();
                 }
             } else {
                 if (!$video.get(0).paused) {
@@ -241,4 +243,21 @@ $(document).ready(function() {
 
     // Trigger the scroll event once on load to check the initial position of the video
     $(window).trigger('scroll');
+
+    // // Khi video bắt đầu phát, thoát chế độ toàn màn hình
+    // $video.addEventListener("play", function() {
+    //     exitFullScreen();
+    // });
+    // Hàm để thoát chế độ toàn màn hình
+    function exitFullScreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) { // Firefox
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) { // Chrome, Safari and Opera
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) { // IE/Edge
+            document.msExitFullscreen();
+        }
+    }
 });
