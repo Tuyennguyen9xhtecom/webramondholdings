@@ -183,7 +183,8 @@ $(document).ready(function() {
 
     /*css theo ngôn ngữ browser*/
     var userLang = navigator.language || navigator.userLanguage; 
-    if(userLang != 'vi-VN'){
+    
+    if(userLang != 'vi-VN' && userLang != 'vi'){
         $('.form-request-recruitment .input-file input').addClass('padding-left-150');
     }
     
@@ -218,46 +219,48 @@ function pauseVideo(){
         }
     });
 }
-$(document).ready(function() {
-    var $video = $('#myvideo');
-    $(window).on('scroll', function() {
+
+//tự động play video trang chủ khi scroll tới video
+// $(document).ready(function() {
+//     var $video = $('#myvideo');
+//     $(window).on('scroll', function() {
         
-        if ($video.length) {
-            var videoTop = $video.offset().top;
-            var videoHeight = $video.height();
-            var windowTop = $(window).scrollTop();
-            var windowHeight = $(window).height();
+//         if ($video.length) {
+//             var videoTop = $video.offset().top;
+//             var videoHeight = $video.height();
+//             var windowTop = $(window).scrollTop();
+//             var windowHeight = $(window).height();
 
-            if ((windowTop + windowHeight) >= videoTop && windowTop <= (videoTop + videoHeight)) {
-                if ($video.get(0).paused) {
-                    $video.get(0).play();
-                    exitFullScreen();
-                }
-            } else {
-                if (!$video.get(0).paused) {
-                    $video.get(0).pause();
-                }
-            }
-        }
-    });
+//             if ((windowTop + windowHeight) >= videoTop && windowTop <= (videoTop + videoHeight)) {
+//                 if ($video.get(0).paused) {
+//                     $video.get(0).play();
+//                     exitFullScreen();
+//                 }
+//             } else {
+//                 if (!$video.get(0).paused) {
+//                     $video.get(0).pause();
+//                 }
+//             }
+//         }
+//     });
 
-    // Trigger the scroll event once on load to check the initial position of the video
-    $(window).trigger('scroll');
+//     // Trigger the scroll event once on load to check the initial position of the video
+//     $(window).trigger('scroll');
 
-    // // Khi video bắt đầu phát, thoát chế độ toàn màn hình
-    // $video.addEventListener("play", function() {
-    //     exitFullScreen();
-    // });
-    // Hàm để thoát chế độ toàn màn hình
-    function exitFullScreen() {
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.mozCancelFullScreen) { // Firefox
-            document.mozCancelFullScreen();
-        } else if (document.webkitExitFullscreen) { // Chrome, Safari and Opera
-            document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) { // IE/Edge
-            document.msExitFullscreen();
-        }
-    }
-});
+//     // // Khi video bắt đầu phát, thoát chế độ toàn màn hình
+//     // $video.addEventListener("play", function() {
+//     //     exitFullScreen();
+//     // });
+//     // Hàm để thoát chế độ toàn màn hình
+//     function exitFullScreen() {
+//         if (document.exitFullscreen) {
+//             document.exitFullscreen();
+//         } else if (document.mozCancelFullScreen) { // Firefox
+//             document.mozCancelFullScreen();
+//         } else if (document.webkitExitFullscreen) { // Chrome, Safari and Opera
+//             document.webkitExitFullscreen();
+//         } else if (document.msExitFullscreen) { // IE/Edge
+//             document.msExitFullscreen();
+//         }
+//     }
+// });

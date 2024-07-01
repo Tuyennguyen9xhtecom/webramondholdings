@@ -475,6 +475,18 @@ footer .contact-footer{
 }
 #about-home-modal .modal-header, #success-mail-modal .modal-header{
     border-bottom: 0px;
+    position: absolute;
+    right: -8%;
+    top: 8px;
+    padding: 0px;
+}
+#success-mail-modal .modal-header{
+    right: -8px;
+    top: -8px;
+}
+.modal-header .close span {
+    color: #ffc107;
+    font-size: 32px;
 }
 #about-home-modal .modal-dialog{
     width: 64.4%;
@@ -527,10 +539,13 @@ footer .contact-footer{
 }
 .film-home iframe, .film-home video{
     aspect-ratio: 16 / 9;
-    margin-bottom: -7px;
-    width: 100%!important;
+    /* margin-bottom: -7px;
+    width: 100%!important; */
     height: auto;
     border: none!important;
+    width: 100%;
+    height: auto;
+    margin-bottom: -10px;
 }
 /*Lĩnh vực hoạt động*/
 .item-activity-home{
@@ -1224,7 +1239,7 @@ footer .contact-footer{
 	border: none;
 	box-shadow: none;
 	background: transparent;
-	color: #fff;
+	/* color: #fff; */
 	padding: 10px 44px 10px 16px;
 	font-size: 16px;
 }
@@ -2700,7 +2715,13 @@ footer .contact-footer{
         background: rgb(244 244 243) !important;
         font-size: 13px;
         line-height: 32.59px;
-        padding-left: 39px;
+        
+    }
+    .form-request-recruitment .input-file input:not(.padding-left-150) {
+        padding-left: 38px!important;
+    }
+    .form-request-recruitment .input-file input.padding-left-150{
+        padding-left: 25px!important;
     }
     .input-file .btn-file-1 {
         width: 110px;
@@ -2713,6 +2734,10 @@ footer .contact-footer{
     }
     .form-request-recruitment .btn-dark-load-more {
         margin-bottom: 40px;
+    }
+    .form-request-recruitment .btn-dark-load-more{
+        width: 100%;
+        padding: 20px;
     }
     .sologan h3 {
         font-size: 32px;
