@@ -50,6 +50,12 @@ $(document).ready(function() {
     $('.btn-search button').on('click', function() {
         $(this).parent().toggleClass('open');
         $(this).prev().focus();
+        if ($(this).parent().hasClass('open')) {
+            $(this).css('background-color', 'transparent');
+        } 
+        else {
+            $(this).css('background-color', '#edeceb');
+        }
     });
 
     $('.view-more-about-home').on('click', function() {
