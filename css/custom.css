@@ -1,3 +1,15 @@
-.banner-page, .banner-page .banner-bg {
-    height: 249px !important;
+
+@media screen and (min-width: 768px) {
+    .banner-page, .banner-page .banner-bg {
+        height: 249px !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .banner-page {
+        aspect-ratio: 16 / 6;
+        height: auto !important;
+    }
+    .banner-page .banner-bg {
+        height: 249px;
+    }
 }
