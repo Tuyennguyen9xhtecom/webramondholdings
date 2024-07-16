@@ -1,15 +1,115 @@
-
+.back-to-top{
+    align-items: center;
+    justify-content: center;
+}
+.back-to-top svg {
+    margin: auto !important;
+    fill: currentColor;
+}
+#modal-event{
+    padding-right: 0px !important;
+    background: rgba(0, 0, 0, 0.8);
+}
+#modal-event .modal-dialog {
+    width: 80%;
+    margin: auto;
+    max-width: 1076px;
+    padding-top: 7vh;
+    padding-bottom:5vh;
+}
+#modal-event .col-item{
+    margin-bottom: 0px !important;
+}
+#modal-event .modal-header{
+    border-bottom: 0px;
+    position: absolute;
+    padding: 0px;
+    right: -25px;
+    top: -30px;
+}
+#modal-event .desc-events{
+    margin-top: 45px;
+    min-height: 231px;
+}
+#modal-event .list-button{
+    margin-top: 50px;
+}
+.item-video .overlay{
+    /* display: none; */
+}
+.item-video .overlay {
+    height: 100%!important;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    width: calc(100%);
+    border-radius: 4px;
+}
+@media screen and (min-width: 1024px) {
+    #modal-event .event-item img {
+        height: 506px;
+    }
+    #modal-event .event-item img{
+        height: 506px;
+        aspect-ratio: 447 / 506;
+        max-height: 506px;
+        width: 100%;
+    }
+}
 @media screen and (min-width: 768px) {
     .banner-page, .banner-page .banner-bg {
         height: 249px !important;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #modal-event .event-item .col-item {
+        padding: 15px 0px!important;
+    }
+    #modal-event .modal-body{
+        padding: 0px!important;
+    }
+}
 @media screen and (max-width: 767px) {
-    .banner-page {
+    .banner-page, .banner-page.banner-project{
         aspect-ratio: 16 / 6;
-        height: auto !important;
+        height: auto!important;
     }
     .banner-page .banner-bg {
         height: 249px;
+    }
+    #modal-event .event-item .col-item {
+        padding: 15px 0px!important;
+    }
+    #modal-event .modal-body{
+        padding: 0px!important;
+    }
+    #modal-event .modal-dialog {
+        padding-top: 15vh;
+        padding-bottom:5vh;
+    }
+    #modal-event .modal-header {
+        top: -15vh;
+    }
+    #modal-event .desc-events{
+        margin-top: 45px;
+        min-height: auto;
+    }
+    .back-to-top{
+        padding-right: 6px!important;
+        padding-left: 6px!important;
+    }
+    .play-video{
+        display: none!important;
+    }
+    .partner-home h2 span{
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 42px;
+        padding-bottom: 30px;
+        letter-spacing: -1px;
+    }
+    .partner-home h2 img{
+        margin-right: 8px !important;
+        height: 32px;
+        width: auto;
+        margin-bottom: 12px;
     }
 }

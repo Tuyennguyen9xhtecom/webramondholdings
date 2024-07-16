@@ -185,6 +185,19 @@ $(document).ready(function() {
 
         $('.slider-single-video').slick('slickGoTo', goToSingleSlideVideo);
     });
+
+    var styleElement = document.getElementById('video-style');
+    //nếu là trang video
+    if ($('body').find('.show-list-video').length) {
+        //click vào overplay thì paly video
+        $('.overlay').click(function(){
+            playVideo();
+        });
+        $('.text-in-video').click(function(){
+            playVideo();
+        });
+
+    }
     //end thư viện video
 
     /*css theo ngôn ngữ browser*/
@@ -193,6 +206,28 @@ $(document).ready(function() {
     if(userLang != 'vi-VN' && userLang != 'vi'){
         $('.form-request-recruitment .input-file input').addClass('padding-left-150');
     }
+
+    //event modal
+    $('.show-list-events .event-item').click(function(){
+        let imgEvent = $(this).find('img').attr('src');
+        $('#modal-event .img-event img').attr('src',imgEvent);
+
+        let dateCreated = $(this).find('.date-created').html();
+        $('#modal-event .date-created').html(dateCreated);
+
+        let titleEvent = $(this).find('h3').html();
+        $('#modal-event .title-events').html(titleEvent);
+        $('#modal-event .img-event img').attr('alt',titleEvent);
+        $('#modal-event .img-event img').attr('title', titleEvent);
+
+        let descEvent = $(this).find('.desc-events').html();
+        $('#modal-event .desc-events').html(descEvent);
+
+        let listButton = $(this).find('.list-button').html();
+        $('#modal-event .list-button').html(listButton);
+
+        $('#modal-event').modal('show');
+    });
     
 });
 
