@@ -28,16 +28,53 @@ $(document).ready(function() {
         variableWidth: true,
     });
 
-    // $('.project-home .list-project').slick({
-    //     dots: false,
-    //     infinite: true,
-    //     lazyLoad: 'ondemand',
-    //     speed: 300,
-    //     slidesToShow: 2,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
-    // });
+    $('.activy-home .list-activy').slick({
+        dots: false,
+        infinite: true,
+        lazyLoad: 'ondemand',
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        }, {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+           }
+        }]
+    });
+
+    $('.project-home .list-project').slick({
+        dots: false,
+        infinite: true,
+        lazyLoad: 'ondemand',
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        }, {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+           }
+        }]
+    });
 
     $('.btn-filter .filter-select').click(function () {
         if($('.btn-filter .dropdown-menu ').css('display') === 'none'){
@@ -228,6 +265,39 @@ $(document).ready(function() {
 
         $('#modal-event').modal('show');
     });
+
+    //zoom ảnh
+    // $('.zoomable').on('click', function() {
+    //     alert('gggggg');
+    //     var imgSrc = $(this).attr('src');
+    //     $('#zoomed-image').attr('src', imgSrc);
+    //     $('#zoomed-image-container').css('display', 'flex');
+    // });
+
+    $('#close-zoomed-image').on('click', function() {
+        $('#zoomed-image-container').hide();
+    });
+
+    // Close the zoomed image when clicking outside of the image
+    $('#zoomed-image-container').on('click', function(event) {
+        if (event.target.id === 'zoomed-image-container' || event.target.id === 'zoomed-image') {
+            $('#zoomed-image-container').hide();
+        }
+    });
+
+    // Function to check if device is mobile
+    function isMobileDevice() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+    }
+    if (isMobileDevice()) {
+        $('.zoomable').on('click', function() {
+            var imgSrc = $(this).attr('src');
+            $('#zoomed-image').attr('src', imgSrc);
+            $('#zoomed-image-container').css('display', 'flex');
+        });
+    }
+    
+    //end zoom ảnh
     
 });
 
